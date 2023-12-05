@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {
+    Box,
+    Button,
+    Modal,
+    Typography
+} from '@mui/material';
 
 function Test() {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <div>
             <Button onClick={() => setOpen(true)}>Open Modal</Button>
